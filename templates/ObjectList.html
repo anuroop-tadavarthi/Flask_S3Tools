@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <title>Object List</title>
+</head>
+<body>
+<table class="striped">
+    <tr>
+        <th>KEY</th>
+        <th>LAST MODIFIED</th>
+        <th>SIZE</th>
+        <th>STORAGE CLASS</th>
+    </tr>
+    {% for i in obj_list %}
+        <tr>
+            <td>{{ i[0] }}</td>
+            <td>{{ i[1] }}</td>
+            <td>{{ i[2] }}</td>
+            <td>{{ i[3] }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
